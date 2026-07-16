@@ -10,6 +10,7 @@ class Job(Base):
     id = Column(String, primary_key=True)
     command = Column(String, nullable=False)
     state = Column(String, default="pending")
+    locked = Column(Integer, default=0)
     attempts = Column(Integer, default=0)
     max_retries = Column(Integer, default=3)
     created_at = Column(DateTime, default=datetime.utcnow)

@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+
+data/queue.db
+
+.vscode/
+
+*.log
+
+.idea/
+
+.DS_Store
+
+data/config.json
